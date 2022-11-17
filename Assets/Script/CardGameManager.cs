@@ -103,11 +103,11 @@ namespace Edu.RPS.Card
                         if (_damagedPlayer == _playerOne)
                         {
                             _playerOne.ChangeHealth(_damageValue);
-                            _playerTwo.ChangeHealth(_restoreValue);
+                            _playerTwo.ChangeHealth(-_restoreValue);
                         }
                         else
                         {
-                            _playerOne.ChangeHealth(_restoreValue);
+                            _playerOne.ChangeHealth(-_restoreValue);
                             _playerTwo.ChangeHealth(_damageValue);
                         }
 
